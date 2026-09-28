@@ -1,0 +1,17 @@
+# зависимости
+node_modules/
+
+# сборка
+dist/
+build/
+
+# переменные окружения
+.env
+.env.*
+!.env.example
+
+# прочее
+*.log
+.DS_Store
+.idea/
+.vscode/
