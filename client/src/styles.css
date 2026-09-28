@@ -84,6 +84,34 @@ input, textarea { font: inherit; color: inherit; }
 
 .login__hint { color: #ff9f9f; font-size: 13px; }
 
+.login__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.login__github:hover { color: #fff; }
+
+.sidebar__footer {
+  margin-top: auto;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+.sidebar__github {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.sidebar__github:hover { color: var(--text); }
+
 /* ---------- Каркас приложения ---------- */
 
 .app { display: flex; height: 100%; overflow: hidden; }
