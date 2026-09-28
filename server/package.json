@@ -1,17 +1,16 @@
 {
-  "name": "messenger-server",
+  "name": "clicker-server",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Серверная часть мессенджера: Express + Socket.IO",
+  "description": "Раздача статики для Печенько-кликера: Express",
   "main": "src/index.js",
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js"
   },
   "dependencies": {
-    "express": "^4.21.2",
-    "socket.io": "^4.8.1"
+    "express": "^4.21.2"
   },
   "engines": {
     "node": ">=18"
