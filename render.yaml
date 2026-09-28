@@ -1,0 +1,17 @@
+# Конфигурация деплоя на Render (https://render.com)
+# Используется кнопкой «Deploy to Render» в README.
+services:
+  - type: web
+    name: messenger
+    runtime: node
+    plan: free
+    region: frankfurt          # ближе всего к Европе
+    branch: main
+    buildCommand: npm run setup && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20"
